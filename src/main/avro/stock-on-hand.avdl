@@ -1,0 +1,20 @@
+@namespace("com.tmobile.soh.schema")
+protocol SOH {
+  enum InventoryStatus {
+    ONE, TWO
+  }
+
+  record LineItem {
+    string stuff;
+    string morestuff;
+  }
+
+  record Received {
+    string                location;
+    string                sku = "ABC";
+    union {null, string}  serialnumber;
+    InventoryStatus       inventorystatus = "TWO";
+    union {null, boolean} sellableflag;
+    array<LineItem>       lineitems;
+  }
+}
