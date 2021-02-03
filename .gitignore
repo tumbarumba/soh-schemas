@@ -3,6 +3,8 @@
 
 # Ignore IDE files
 .idea
+*.iml
 
-# Ignore Gradle build output directory
+# Ignore build output directory
 build
+target
