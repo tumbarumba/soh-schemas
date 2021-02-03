@@ -19,7 +19,7 @@ sourceSets.create("avroGenerated") {
 }
 
 dependencies {
-    avroRuntime("org.apache.avro:avro:1.10.0")
-    api("org.apache.avro:avro:1.10.0")
+    avroRuntime("org.apache.avro:avro:1.10.1")
+    api("org.apache.avro:avro:1.10.1")
     api(sourceSets["avroGenerated"].output)
 }
